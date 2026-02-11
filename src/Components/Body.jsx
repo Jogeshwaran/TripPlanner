@@ -6,7 +6,9 @@ function Body () {
     return (
         <div className="flex">
           <Sidebar /> 
+          <div className="flex-1 min-w-0">
            <MainContainer />
+           </div>
         </div>
     )
 }
