@@ -63,7 +63,7 @@ const ButtonList = () => {
   return (
     <div className="flex items-center overflow-hidden gap-2 w-full">
       {showLeft && (
-        <button className="shrink-0" onClick={scrollLeft}>
+        <button className="cursor-pointer shrink-0" onClick={scrollLeft}>
           ◀️
         </button>
       )}
@@ -76,7 +76,7 @@ const ButtonList = () => {
         ))}
       </div>
       {showRight && (
-        <button className="shrink-0" onClick={scrollRight}>
+        <button className="cursor-pointer shrink-0" onClick={scrollRight}>
           ▶️
         </button>
       )}
