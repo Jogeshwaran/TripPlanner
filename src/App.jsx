@@ -1,17 +1,29 @@
-import { useContext } from "react";
+import { Provider } from "react-redux";
 import Body from "./Components/Body";
-import LoginModal from "./Components/LoginModal";
-import LoginContext from "./Context/LoginContext";
+import Header from "./Components/Header";
+import store from "./Utils/store";
 
 function App() {
-  const { openLoginModal } = useContext(LoginContext);
   return (
-    <div className="bg-blue-400 min-h-screen">
-      <div>
-        {<Body /> } 
-      </div>
+    <Provider store={store}>
+    <div>
+     <Header />
+     <Body />
     </div>
+    </Provider>
   );
 }
 
 export default App;
+
+{/* 
+        Header
+        Body
+        Sidebar
+          Menu Items
+        MainContainer
+          Button LIst
+          VideoContainer
+          VideoCard
+      
+      */}

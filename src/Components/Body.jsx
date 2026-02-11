@@ -1,13 +1,14 @@
-import Header from "./Header"
+import { useSelector } from "react-redux";
+import MainContainer from "./MainContainer";
+import Sidebar from "./Sidebar";
 
-function Body(){
-    return(
-        <div>
-            {/* Components need to rendered  */}
-        <Header />
-
+function Body () {
+    return (
+        <div className="flex">
+          <Sidebar /> 
+           <MainContainer />
         </div>
     )
 }
 
-export default Body
+export default Body;
